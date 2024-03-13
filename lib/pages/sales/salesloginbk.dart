@@ -187,8 +187,8 @@ class _SalesLoginState extends State<SalesLogin> {
 
   final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-      shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      primary: Colors.deepPurple);
+      backgroundColor: Colors.deepPurple,
+      shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10.0)));
 
   void _initCheck() async {
     thermalPrint = Thermal();

@@ -94,8 +94,8 @@ class _CardsViewState extends State<CardsView> {
 
   final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-      shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      primary: Colors.deepPurple);
+      backgroundColor: Colors.deepPurple,
+      shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(10.0)));
 
   Widget build(BuildContext context) {
     return Scaffold(
