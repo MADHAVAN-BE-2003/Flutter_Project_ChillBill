@@ -1,17 +1,17 @@
-import 'package:dio/dio.dart';
-import 'package:flutter_application_1/pages/master/list/model/card_model.dart';
-import 'package:flutter_application_1/pages/master/list/service/card_service_interface.dart';
-import 'package:flutter_application_1/pages/master/list/model/pagination_model.dart';
+import 'package:chill_bill/pages/master/list/model/card_model.dart';
+import 'package:chill_bill/pages/master/list/model/pagination_model.dart';
+import 'package:chill_bill/pages/master/list/service/card_service_interface.dart';
+// import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
 class CardService extends CardServiceInterface {
-  late Dio _dio;
-  CardService() {
-    _dio = Dio();
-  }
+  // late Dio _dio;
+  // CardService() {
+  //   _dio = Dio();
+  // }
   String mastersearch = '';
 
   @override
@@ -32,13 +32,13 @@ class CardService extends CardServiceInterface {
     };
 
     // print(queryParameters);
-    var formData = FormData.fromMap({
-      "page": paginate.page,
-      "limit": paginate.limit,
-      "size": paginate.limit,
-      "report_action": "masterloginlist",
-      "search": mastersearch
-    });
+    // var formData = FormData.fromMap({
+    //   "page": paginate.page,
+    //   "limit": paginate.limit,
+    //   "size": paginate.limit,
+    //   "report_action": "masterloginlist",
+    //   "search": mastersearch
+    // });
 
     // print(queryParameters);
     try {

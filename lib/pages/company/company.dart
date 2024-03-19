@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/foundation.dart';
 // import 'package:flutter_application_1/pages/master/masterform.dart';
-import 'package:flutter_application_1/pages/company/companylogin.dart';
-import 'package:flutter_application_1/pages/company/list/view/cards_view.dart';
+import 'package:chill_bill/pages/company/company_login.dart';
+import 'package:chill_bill/pages/company/list/view/cards_view.dart';
 
 // import 'package:infinite_scroll/view/cards_view.dart';
 

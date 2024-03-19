@@ -1,13 +1,13 @@
+import 'package:chill_bill/otherpages/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_application_1/otherpages/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -37,12 +37,12 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        backgroundColor: Color(0xffF5F6F8),
+        primaryColor: Color(0xfff5f6f8),
         fontFamily: "Nunito",
       ),
       title: 'Chill Bill',
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(user),
+      home: SplashScreen(user: user),
     );
   }
 }

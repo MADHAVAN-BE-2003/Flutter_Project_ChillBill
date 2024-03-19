@@ -46,7 +46,7 @@ class CardPage extends StatelessWidget {
                             color: Colors.lightBlue[900],
                             size: 20,
                           ),
-                          onPressed: (){},
+                          onPressed: () {},
                         )
                       ],
                     ),
@@ -261,7 +261,8 @@ class CardPage extends StatelessWidget {
                         Row(
                           children: <Widget>[
                             Icon(
-                              Icons.wifi_tethering,size: 20,
+                              Icons.wifi_tethering,
+                              size: 20,
                               color: Colors.lightBlue[900],
                             ),
                             SizedBox(

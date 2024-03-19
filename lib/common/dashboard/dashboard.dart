@@ -1,7 +1,7 @@
+import 'package:chill_bill/common/drawer.dart';
 import 'package:flutter/material.dart';
 import 'screens/cards_page.dart';
-import 'screens/homapage.dart';
-import 'package:flutter_application_1/common/drawer.dart';
+import 'screens/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 // void main() => runApp(const WalletAppClone());
 

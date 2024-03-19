@@ -1,6 +1,6 @@
 import 'dart:io';
 // import 'package:blue_thermal_printer_example/testprint.dart';
-import 'package:flutter_application_1/pages/purchase/testprint.dart';
+import 'package:chill_bill/pages/sales/test_print.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:blue_thermal_printer/blue_thermal_printer.dart';
@@ -155,7 +155,7 @@ class _PosState extends State<Pos> {
                       child: DropdownButton(
                         items: _getDeviceItems(),
                         onChanged: (value) =>
-                            setState(() => _device = value as BluetoothDevice?),
+                            setState(() => _device = value),
                         value: _device,
                       ),
                     ),
@@ -261,7 +261,7 @@ class _PosState extends State<Pos> {
 
   Future show(
     String message, {
-    Duration duration: const Duration(seconds: 3),
+    Duration duration = const Duration(seconds: 3),
   }) async {
     await new Future.delayed(new Duration(milliseconds: 100));
     ScaffoldMessenger.of(context).showSnackBar(

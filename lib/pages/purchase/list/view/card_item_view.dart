@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/purchase/list/model/card_model.dart';
+import 'package:chill_bill/pages/purchase/list/model/card_model.dart';
 
 // Widget okButton = TextButton(
 //   child: Text("OK"),

@@ -1,8 +1,8 @@
+import 'package:chill_bill/pages/master/list/view/cards_view.dart';
+import 'package:chill_bill/pages/master/master_login.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/foundation.dart';
 // import 'package:flutter_application_1/pages/master/masterform.dart';
-import 'package:flutter_application_1/pages/master/masterlogin.dart';
-import 'package:flutter_application_1/pages/master/list/view/cards_view.dart';
 
 // import 'package:infinite_scroll/view/cards_view.dart';
 

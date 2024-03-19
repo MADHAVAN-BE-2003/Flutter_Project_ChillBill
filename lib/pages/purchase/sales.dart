@@ -1,9 +1,11 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 // import 'package:flutter/foundation.dart';
 // import 'package:flutter_application_1/pages/sales/salesform.dart';
-import 'package:flutter_application_1/pages/purchase/saleslogin.dart';
-import 'package:flutter_application_1/pages/purchase/pos.dart';
-import 'package:flutter_application_1/pages/purchase/list/view/cards_view.dart';
+import 'package:chill_bill/pages/purchase/sales_login.dart';
+import 'package:chill_bill/pages/purchase/pos.dart';
+import 'package:chill_bill/pages/purchase/list/view/cards_view.dart';
 // import 'package:flutter_application_1/createpdf/page/pdf_page.dart';
 
 // import 'package:infinite_scroll/view/cards_view.dart';

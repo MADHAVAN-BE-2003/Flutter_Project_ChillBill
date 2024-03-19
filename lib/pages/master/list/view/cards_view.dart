@@ -1,6 +1,6 @@
+import 'package:chill_bill/pages/master/list/view_model/cards_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:flutter_application_1/pages/master/list/viewmodel/cards_view_model.dart';
 
 import 'card_item_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -70,11 +70,12 @@ class _CardsViewState extends State<CardsView> {
                     onPressed: () async {
                       final store = await SharedPreferences.getInstance();
                       store.setString('mastersearch', _searchController.text);
-                      _vm.cards.length = 0;
-                      _vm = CardsViewModel();
-                      _vm.init();
-                      _vm.fetchCards();
-                      (context as Element).reassemble();
+                      setState(() {
+                        _vm.cards.length = 0;
+                        _vm = CardsViewModel();
+                        _vm.init();
+                        _vm.fetchCards();
+                      });
                       // _vm.cards = 1;
                       // controller.clear();
                       // onSearchTextChanged('');
@@ -94,11 +95,13 @@ class _CardsViewState extends State<CardsView> {
                       _searchController.text = '';
                       final store = await SharedPreferences.getInstance();
                       store.setString('mastersearch', '');
-                      _vm.cards.length = 0;
-                      _vm = CardsViewModel();
-                      _vm.init();
-                      _vm.fetchCards();
-                      (context as Element).reassemble();
+                      setState(() {
+                        _vm.cards.length = 0;
+                        _vm = CardsViewModel();
+                        _vm.init();
+                        _vm.fetchCards();
+                      });
+
                       // controller.clear();
                       // onSearchTextChanged('');
                     },

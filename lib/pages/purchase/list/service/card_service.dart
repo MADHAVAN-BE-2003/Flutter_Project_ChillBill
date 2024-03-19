@@ -1,7 +1,9 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:dio/dio.dart';
-import 'package:flutter_application_1/pages/purchase/list/model/card_model.dart';
-import 'package:flutter_application_1/pages/purchase/list/service/card_service_interface.dart';
-import 'package:flutter_application_1/pages/purchase/list/model/pagination_model.dart';
+import 'package:chill_bill/pages/purchase/list/model/card_model.dart';
+import 'package:chill_bill/pages/purchase/list/service/card_service_interface.dart';
+import 'package:chill_bill/pages/purchase/list/model/pagination_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CardService extends CardServiceInterface {

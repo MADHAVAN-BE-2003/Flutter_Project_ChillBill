@@ -1,7 +1,9 @@
+// ignore_for_file: unused_field, unused_local_variable
+
 import 'package:dio/dio.dart';
-import 'package:flutter_application_1/pages/company/list/model/card_model.dart';
-import 'package:flutter_application_1/pages/company/list/service/card_service_interface.dart';
-import 'package:flutter_application_1/pages/company/list/model/pagination_model.dart';
+import 'package:chill_bill/pages/company/list/model/card_model.dart';
+import 'package:chill_bill/pages/company/list/service/card_service_interface.dart';
+import 'package:chill_bill/pages/company/list/model/pagination_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';

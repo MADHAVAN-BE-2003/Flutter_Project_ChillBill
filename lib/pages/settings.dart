@@ -1,10 +1,7 @@
-import 'dart:io';
+import 'package:chill_bill/pages/invoice_settings.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
-import 'package:flutter_application_1/pages/invoice_setttings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 bool productgrid = false;
