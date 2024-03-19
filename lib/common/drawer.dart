@@ -1,20 +1,21 @@
 import 'package:chill_bill/otherpages/login.dart';
+import 'package:chill_bill/pages/category/category.dart';
 import 'package:chill_bill/pages/company/company.dart';
+import 'package:chill_bill/pages/items/items.dart';
 import 'package:chill_bill/pages/master/master.dart';
+import 'package:chill_bill/pages/product_category/category.dart';
+import 'package:chill_bill/pages/users/users.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-// import 'package:flutter_application_1/pages/users/users.dart';
-// import 'package:flutter_application_1/pages/customers/customers.dart';
-// import 'package:flutter_application_1/pages/items/items.dart';
-// import 'package:flutter_application_1/pages/sales/sales.dart';
-// import 'package:flutter_application_1/pages/vendor/vendors.dart';
+import 'package:chill_bill/pages/customers/customers.dart';
+import 'package:chill_bill/pages/sales/sales.dart';
+import 'package:chill_bill/pages/vendor/vendors.dart';
 // import 'package:flutter_application_1/createpdf/main_pdf.dart';
 import 'package:chill_bill/pages/settings.dart';
-// import 'package:flutter_application_1/pages/expenses/expenses.dart';
+import 'package:chill_bill/pages/expenses/expenses.dart';
 // import 'package:flutter_application_1/pages/category/category.dart';
 import 'package:chill_bill/pages/purchase/sales.dart';
-// import 'package:flutter_application_1/pages/product_category/category.dart';
 // C:\flutterprojects\invoice_build\flutter_application_1\lib\pages\product_category\categorycreate.dart
 
 // C:\flutterprojects\invoice\lib\pages\settings.dart
@@ -179,10 +180,10 @@ class _SideMenuState extends State<SideMenu> {
                   // subtitle: Text("This is the 1st item"),
                   // trailing: Icon(Icons.more_vert),
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => const Users()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Users()),
+                    );
                   },
                 )
               ],
@@ -205,10 +206,10 @@ class _SideMenuState extends State<SideMenu> {
                 // subtitle: Text("This is the 1st item"),
                 // trailing: Icon(Icons.more_vert),
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => const Items()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Items()),
+                  );
                 },
               ),
               ListTile(
@@ -221,11 +222,11 @@ class _SideMenuState extends State<SideMenu> {
                 // subtitle: Text("This is the 1st item"),
                 // trailing: Icon(Icons.more_vert),
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //       builder: (context) => const ProductCategory()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ProductCategory()),
+                  );
                 },
               ),
               ListTile(
@@ -238,10 +239,10 @@ class _SideMenuState extends State<SideMenu> {
                 // subtitle: Text("This is the 1st item"),
                 // trailing: Icon(Icons.more_vert),
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => const Customers()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Customers()),
+                  );
                 },
               ),
               ListTile(
@@ -254,10 +255,10 @@ class _SideMenuState extends State<SideMenu> {
                 // subtitle: Text("This is the 1st item"),
                 // trailing: Icon(Icons.more_vert),
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => const Vendors()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Vendors()),
+                  );
                 },
               )
             ],
@@ -279,10 +280,10 @@ class _SideMenuState extends State<SideMenu> {
                 // subtitle: Text("This is the 1st item"),
                 // trailing: Icon(Icons.more_vert),
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => Category()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Category()),
+                  );
                 },
               ),
               ListTile(
@@ -295,10 +296,10 @@ class _SideMenuState extends State<SideMenu> {
                 // subtitle: Text("This is the 1st item"),
                 // trailing: Icon(Icons.more_vert),
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => const Expenses()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Expenses()),
+                  );
                 },
               ),
             ],
@@ -312,10 +313,10 @@ class _SideMenuState extends State<SideMenu> {
             // subtitle: Text("This is the 1st item"),
             // trailing: Icon(Icons.more_vert),
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => Sales()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Sales()),
+              );
             },
           ),
           ListTile(
